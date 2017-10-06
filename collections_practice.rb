@@ -43,13 +43,16 @@ end
 
 def count_elements(array)
   answer = []
-  array.each do |item|
-    item.each do |key, name|
-      answer.push(item)
-    end
-  end
-  answer
+temp = array.each_with_object(Hash.new(0)) { |item,counts| counts[item] += 1 }
+holder = temp.each do |name, num|
+  answer.push(name)
 end
-
-
-  
+answer.each do |item|
+  holder.each do |name, num|
+    if item = name
+  item[:count] = num
+end
+end
+end
+answer
+end
