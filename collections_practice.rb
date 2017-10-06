@@ -57,7 +57,7 @@ end
 answer
 end
 
-def merge_data(hash1, hash2)
+def merge_data(arr1, arr2)
   answer = []
   arr1.each do |key|
     arr2.each do |name, info|
