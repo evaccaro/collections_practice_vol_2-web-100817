@@ -58,19 +58,15 @@ answer
 end
 
 def merge_data(arr1, arr2)
-  temp_answer = []
   answer = []
   arr1.each do |person|
     arr2.each do |info|
       info.values.each do |item|
-        item = person.merge(item)
-        temp_answer.push(item)
+        answer.push(item = person.merge(item))
       end
   end
 end
-answer.push(temp_answer[0])
-answer.push(temp_answer[2])
-answer
+  answer
 end
 
 def find_cool(arrs)
