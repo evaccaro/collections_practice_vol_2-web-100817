@@ -58,19 +58,15 @@ answer
 end
 
 def merge_data(arr1, arr2)
-  answer = []
-  arr1.each do |key|
-    arr2.each do |name, info|
-    answer.push(key)
-  end
-end
-  answer.each do |person|
-    arr2.each do |name, info|
-    if person.has_value?(name)
-      answer[person] = info.values
+  answer = {}
+  
+  arr1.each do |person|
+    arr2.each do |info|
+      info.each do |name, stuff|
+        answer[person] = stuff
+      end
     end
   end
-end
   answer
 end
 
