@@ -59,7 +59,7 @@ end
 
 def merge_data(arr1, arr2)
   answer = []
-  
+
   arr1.each do |person|
 
     arr2.each do |info|
