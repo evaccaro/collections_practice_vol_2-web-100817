@@ -64,12 +64,10 @@ end
 
 def find_cool(arrs)
 answer = []
-
   arrs.each do |hashed|
     if hashed.has_value?("cool")
       answer.push(hashed)
     end
-
 end
 answer
 end
