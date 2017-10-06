@@ -40,3 +40,16 @@ def remove_non_strings(array)
   end
   answer
 end
+
+def count_elements(array)
+  answer = []
+  array.each do |item|
+    item.each do |key, name|
+      answer.push(item)
+    end
+  end
+  answer
+end
+
+
+  
