@@ -59,5 +59,5 @@ end
 
 def merge_data(hash1, hash2)
   answer = {}
-  puts hash1
+  puts keys
 end
