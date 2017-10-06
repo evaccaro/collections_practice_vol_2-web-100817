@@ -88,7 +88,9 @@ def organize_schools(hash)
   answer = {}
 
     hash.each do |name, place|
-      answer[place] = []
+      place.each do |title, loca|
+      answer[loca] = []
+    end
     end
     hash.each do |name, place|
       answer.each do |city, arr|
