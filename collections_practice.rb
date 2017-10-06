@@ -96,7 +96,7 @@ def organize_schools(hash)
       place.each do |title, loca|
       answer.each do |city, arr|
         if loca == city
-          answer[place].push(name)
+          answer[loca].push(name)
         end
       end
     end
