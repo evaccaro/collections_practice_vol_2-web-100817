@@ -83,3 +83,19 @@ answer = []
 end
 answer
 end
+
+def organize_schools(hash)
+  answer = {}
+
+    hash.each do |name, place|
+      answer[place] = []
+    end
+    hash.each do |name, place|
+      answer.each do |city, arr|
+        if place == city
+          answer[place].push(name)
+        end
+      end
+    end
+    answer
+end
