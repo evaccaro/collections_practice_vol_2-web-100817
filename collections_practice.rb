@@ -56,3 +56,6 @@ end
 end
 answer
 end
+
+def merge_data
+end
