@@ -58,8 +58,20 @@ answer
 end
 
 def merge_data(hash1, hash2)
-  answer = {}
-  puts keys
+  answer = []
+  arr1.each do |key|
+    arr2.each do |name, info|
+    answer.push(key)
+  end
+end
+  answer.each do |person|
+    arr2.each do |name, info|
+    if person.has_value?(name)
+      answer[person] = info.values
+    end
+  end
+end
+  answer
 end
 
 def find_cool(arrs)
