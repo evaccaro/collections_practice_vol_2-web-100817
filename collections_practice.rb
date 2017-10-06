@@ -61,3 +61,15 @@ def merge_data(hash1, hash2)
   answer = {}
   puts keys
 end
+
+def find_cool(hash)
+  answer = []
+  hash.each do |name, arrs|
+    arrs.each do |hashed|
+      if hashed.has_value?("cool")
+        answer.push(hashed)
+      end
+    end
+  end
+  answer
+end
